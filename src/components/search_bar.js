@@ -1,23 +1,13 @@
 import React, { Component } from 'react';
 
-// const SearchBar = () => {
-//   return (
-//     <div className="input-wrap">
-//       <input />
-//     </div>
-//   );
-// };
-
 class SearchBar extends Component {
-  // Class based objects only
-  // Initialize state
   constructor(props) {
     super(props);
 
     this.state = { term: '' };
   }
+
   render() {
-    // Controlled component
     return (
       <div className="input-wrap">
         <input
@@ -28,10 +18,6 @@ class SearchBar extends Component {
       </div>
     );
   }
-
-  // handleInputChange(event) {
-  //   console.log(event.target.value);
-  // }
 }
 
 export default SearchBar;
